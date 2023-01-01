@@ -107,7 +107,7 @@ _Тест-кейс N-15:_ Тестирование аутентификации 
     pip install -r requirements.txt
     ```
 
-2) Скачать Selenium WebDriver отсюда https://chromedriver.chromium.org/downloads (выбрать версию согласно Вашему браузеру)
+2) Скачать Chrome WebDriver отсюда https://chromedriver.chromium.org/downloads (выбрать версию согласно Вашей ОС)
 
 3) Запуск:
 

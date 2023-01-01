@@ -15,14 +15,14 @@ class WebElement(object):
     _timeout = 10
     _wait_after_click = False
 
-    def __init__(self, timeout=10, wait_after_click=False, **kwargs):
+    def __init__(self, timeout=2, wait_after_click=False, **kwargs):
         self._timeout = timeout
         self._wait_after_click = wait_after_click
 
         for attr in kwargs:
             self._locator = (str(attr).replace('_', ' '), str(kwargs.get(attr)))
 
-    def find(self, timeout=10):
+    def find(self, timeout=2):
         """ Find element on the page. """
 
         element = None
@@ -36,7 +36,7 @@ class WebElement(object):
 
         return element
 
-    def wait_to_be_clickable(self, timeout=10, check_visibility=True):
+    def wait_to_be_clickable(self, timeout=2, check_visibility=True):
         """ Wait until the element will be ready for click. """
 
         element = None
@@ -75,7 +75,7 @@ class WebElement(object):
 
         return False
 
-    def wait_until_not_visible(self, timeout=10):
+    def wait_until_not_visible(self, timeout=2):
 
         element = None
 
@@ -226,7 +226,7 @@ class ManyWebElements(WebElement):
         elements = self.find()
         return elements[item]
 
-    def find(self, timeout=10):
+    def find(self, timeout=2):
         """ Find elements on the page. """
 
         elements = []

@@ -31,6 +31,3 @@ class RegPage(WebPage):
     message_must_be_filled_in_cyrillic = WebElement(xpath='//*[@id="page-right"]/div/div/div/form/div[1]/div[2]/span')
     message_passwords_dont_match = WebElement(xpath='//*[@id="page-right"]/div/div/div/form/div[4]/div[2]/span')
     message_enter_the_phone_in_the_format = WebElement(xpath='//*[@id="page-right"]/div/div/div/form/div[3]/span')
-
-
-

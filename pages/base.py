@@ -101,7 +101,7 @@ class WebPage(object):
 
                 assert ignore, 'JS error "{0}" on the page!'.format(log_message)
 
-    def wait_page_loaded(self, timeout=60, check_js_complete=True,
+    def wait_page_loaded(self, timeout=5, check_js_complete=True,
                          check_page_changes=False, check_images=False,
                          wait_for_element=None,
                          wait_for_xpath_to_disappear='',

@@ -21,9 +21,3 @@ class AuthPage(WebPage):
     lk_form = WebElement(xpath='//*[@id="page-right"]/div/div[2]')
     message_invalid_username_or_password = WebElement(xpath='//*[@id="page-right"]/div/div/p')
     the_element_forgot_the_password = WebElement(xpath='//*[@id="forgot_password"]')
-
-
-
-
-
-
