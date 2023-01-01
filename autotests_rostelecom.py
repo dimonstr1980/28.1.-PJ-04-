@@ -18,7 +18,7 @@ def test_start_page_is_correct(web_browser):
     assert page.logo_lk.get_text() == "Личный кабинет"
 
 
-# Тест-кейс N-02 (Bugs-02).
+# Тест-кейс N-02 (Bugs-01).
 # Проверка элементов в левом и правом блоке страницы.
 @pytest.mark.xfail(reason="Расположение элементов на странице не соответствует ожидаемым требованиям")
 def test_location_of_page_blocks(web_browser):
@@ -27,7 +27,7 @@ def test_location_of_page_blocks(web_browser):
     assert page.lk_form.find(timeout=1)
 
 
-# Тест-кейс N-03 (Bugs-03).
+# Тест-кейс N-03 (Bugs-02).
 # Проверка названия таба выбора "Номер".
 @pytest.mark.xfail(reason="Таб выбора 'Номер' не соответствует ожидаемым требованиям")
 def test_phone_tab(web_browser):
@@ -35,7 +35,7 @@ def test_phone_tab(web_browser):
     assert page.phone_tab.get_text() == "Номер"
 
 
-# Тест-кейс N-04 (Bugs-04).
+# Тест-кейс N-04 (Bugs-03).
 # Проверка название кнопки "Продолжить" в форме "Регистрация".
 @pytest.mark.xfail(reason="Кнопка должна иметь текст 'Продолжить'")
 def test_registration_page_and_continue_button(web_browser):
@@ -114,7 +114,7 @@ def test_registration_of_an_already_registered_user(web_browser):
     assert reg_page.notification_form.is_visible
 
 
-# Тест-кейс N-09 (Bugs-10).
+# Тест-кейс N-09 (Bugs-04).
 # Проверка кнопки "х" -- закрыть всплывающее окно оповещения.
 @pytest.mark.xfail(reason="Должна быть кнопка закрыть 'х'")
 def test_notification_form(web_browser):
